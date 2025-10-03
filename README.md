@@ -1,15 +1,15 @@
 # CommandLogger Plugin
 
-A professional Minecraft plugin that logs player commands and sends them to Discord webhooks with detailed information including player heads as thumbnails.
+
+<img width="531" height="210" alt="image" src="https://github.com/user-attachments/assets/0e496dd4-0a80-40f0-b743-95352963efc8" />
+
 
 ## Features
 
 - **Discord Webhook Integration**: Sends command logs to Discord with rich embeds
-- **Player Head Thumbnails**: Shows the player's Minecraft head as thumbnail
 - **Configurable Command Filtering**: Monitor only specific commands or ignore unwanted ones
 - **Detailed Information**: Includes player location, world, game mode, server info, and more
 - **Console Logging**: Optional console logging for debugging
-- **Admin Commands**: Built-in commands for plugin management
 - **Permission System**: Proper permission handling for admin commands
 
 ## Installation
@@ -103,14 +103,10 @@ logging:
 The webhook sends rich embeds containing:
 - **Player Name**: Who executed the command
 - **Command**: The full command with arguments
-- **Player UUID**: For identification
-- **World**: Which world the player is in
-- **Location**: Exact coordinates (X, Y, Z)
-- **Server Name**: Your server name
 - **Online Players**: Current player count
-- **Game Mode**: Player's current game mode
 - **Player Head**: Thumbnail showing player's Minecraft head
-- **Timestamp**: When the command was executed
+- **Op Status**: Checks if the player has an option
+- **Command Status**: Checks whether the command works or not
 
 ### Command Filtering
 
@@ -134,5 +130,6 @@ The webhook sends rich embeds containing:
 ## Support
 
 For issues or feature requests please create an issue in the repository.
+
 
 
