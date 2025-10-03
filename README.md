@@ -25,48 +25,28 @@
 ### config.yml
 
 ```yaml
+# CommandLogger Plugin Configuration
 # Webhook settings
 webhook:
   url: "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_HERE"
-  enabled: true
-
-# Command filtering
-commands:
-  # Commands to monitor (without / prefix)
-  monitored:
-    - "say"
-    - "tell"
-    - "msg"
-    - "w"
-    - "me"
-    - "help"
-    - "spawn"
-    - "home"
-    - "tp"
-    - "teleport"
-    - "gamemode"
-    - "give"
-    - "kill"
-    - "ban"
-    - "kick"
-    - "op"
-    - "deop"
-    - "whitelist"
-    - "pardon"
-    - "unban"
   
-  # Commands to ignore
-  ignored:
-    - "login"
-    - "register"
-    - "changepassword"
-    - "l"
-    - "afk"
+# Admin specified commands to log (without / prefix)
+# Only these commands will be sent to webhook
+commands:
+  - "gamemode"
+  - "kill"
+  - "ban"
+  - "kick"
+  - "op"
+  - "deop"
+  - "whitelist"
+  - "pardon"
+  - "unban"
 
 # Discord embed settings
 discord:
   bot_name: "Command Logger"
-  embed_color: "16711680"  # Red color
+  embed_color: "16711680"
   show_player_head: true
   show_server_info: true
   show_timestamp: true
@@ -75,6 +55,7 @@ discord:
 logging:
   console_log: true
   log_level: "INFO"
+
 ```
 
 ## Commands
@@ -130,6 +111,7 @@ The webhook sends rich embeds containing:
 ## Support
 
 For issues or feature requests please create an issue in the repository.
+
 
 
 
