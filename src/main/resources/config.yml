@@ -6,18 +6,7 @@ webhook:
 # Admin specified commands to log (without / prefix)
 # Only these commands will be sent to webhook
 commands:
-  - "say"
-  - "tell"
-  - "msg"
-  - "w"
-  - "me"
-  - "help"
-  - "spawn"
-  - "home"
-  - "tp"
-  - "teleport"
   - "gamemode"
-  - "give"
   - "kill"
   - "ban"
   - "kick"
@@ -39,3 +28,4 @@ discord:
 logging:
   console_log: true
   log_level: "INFO"
+
