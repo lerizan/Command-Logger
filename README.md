@@ -1,4 +1,4 @@
-# CommandLogger Plugin
+# CommandLogger Plugin 
 
 
 <img width="531" height="210" alt="image" src="https://github.com/user-attachments/assets/0e496dd4-0a80-40f0-b743-95352963efc8" />
@@ -112,6 +112,8 @@ The webhook sends rich embeds containing:
 
 For issues or feature requests please create an issue in the repository.
 
+
+- Please do not use /login
 
 
 
