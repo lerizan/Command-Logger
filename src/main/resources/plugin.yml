@@ -1,0 +1,21 @@
+name: CommandLogger
+version: '1.0'
+main: alpdev.CommandLogger
+api-version: '1.21'
+authors: [lerizan]
+description: A plugin that logs player commands and sends them to Discord webhooks
+
+commands:
+  commandlogger:
+    description: CommandLogger plugin management command
+    usage: /commandlogger <reload|info>
+    permission: commandlogger.use
+    aliases: [cl, cmdlog]
+
+permissions:
+  commandlogger.use:
+    description: Allows access to CommandLogger commands
+    default: op
+  commandlogger.reload:
+    description: Allows reloading the CommandLogger configuration
+    default: op
