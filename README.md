@@ -8,17 +8,9 @@
 
 - **Discord Webhook Integration**: Sends command logs to Discord with rich embeds
 - **Configurable Command Filtering**: Monitor only specific commands or ignore unwanted ones
-- **Detailed Information**: Includes player location, world, game mode, server info, and more
+- **Detailed Information**: Includes player location world, game mode server info and more
 - **Console Logging**: Optional console logging for debugging
 - **Permission System**: Proper permission handling for admin commands
-
-## Installation
-
-1. Download the plugin JAR file
-2. Place it in your server's `plugins` folder
-3. Start your server to generate the config file
-4. Configure the webhook URL in `config.yml`
-5. Restart your server
 
 ## Configuration
 
@@ -69,14 +61,6 @@ logging:
 - `commandlogger.use` - Access to CommandLogger commands (default: op)
 - `commandlogger.reload` - Reload configuration (default: op)
 
-## Discord Webhook Setup
-
-1. Go to your Discord server settings
-2. Navigate to Integrations → Webhooks
-3. Create a new webhook
-4. Copy the webhook URL
-5. Paste it in the `config.yml` file under `webhook.url`
-
 ## Features in Detail
 
 ### Discord Embed Information
@@ -114,6 +98,7 @@ For issues or feature requests please create an issue in the repository.
 
 
 - Please do not use /login
+
 
 
 
