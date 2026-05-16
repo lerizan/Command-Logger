@@ -12,43 +12,6 @@
 - **Console Logging**: Optional console logging for debugging
 - **Permission System**: Proper permission handling for admin commands
 
-## Configuration
-
-### config.yml
-
-```yaml
-# CommandLogger Plugin Configuration
-# Webhook settings
-webhook:
-  url: "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_HERE"
-  
-# Admin specified commands to log (without / prefix)
-# Only these commands will be sent to webhook
-commands:
-  - "gamemode"
-  - "kill"
-  - "ban"
-  - "kick"
-  - "op"
-  - "deop"
-  - "whitelist"
-  - "pardon"
-  - "unban"
-
-# Discord embed settings
-discord:
-  bot_name: "Command Logger"
-  embed_color: "16711680"
-  show_player_head: true
-  show_server_info: true
-  show_timestamp: true
-
-# Logging settings
-logging:
-  console_log: true
-  log_level: "INFO"
-
-```
 
 ## Commands
 
@@ -56,22 +19,6 @@ logging:
 - `/commandlogger reload` - Reload the configuration (requires permission)
 - `/commandlogger info` - Show detailed plugin information
 
-## Permissions
-
-- `commandlogger.use` - Access to CommandLogger commands (default: op)
-- `commandlogger.reload` - Reload configuration (default: op)
-
-## Features in Detail
-
-### Discord Embed Information
-
-The webhook sends rich embeds containing:
-- **Player Name**: Who executed the command
-- **Command**: The full command with arguments
-- **Online Players**: Current player count
-- **Player Head**: Thumbnail showing player's Minecraft head
-- **Op Status**: Checks if the player has an option
-- **Command Status**: Checks whether the command works or not
 
 ### Command Filtering
 
@@ -80,24 +27,14 @@ The webhook sends rich embeds containing:
 - **Case Insensitive**: Command matching is case-insensitive
 
 
-## Building from Source
-
-1. Clone the repository
-2. Run `./gradlew build` (Linux/Mac) or `gradlew.bat build` (Windows)
-3. Find the JAR file in `build/libs/`
-
 ## Requirements
 
 - Minecraft 1.21+
 - Spigot/Paper server
 - Java 21+
 
-## Support
 
-For issues or feature requests please create an issue in the repository.
-
-
-- Please do not use /login
+- Do not use /login
 
 
 
